@@ -27,8 +27,8 @@ const Navbar = ({ children }) => {
   return (
     <div className="drawer drawer-end ">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col">
-        <div className="flex justify-between items-center bg-white text-black opacity-80 px-4 py-2 shadow-lg">
+      <div className="drawer-content flex flex-col ">
+        <div className="flex justify-between items-center bg-gray-200 text-black opacity-80 px-4 py-2 shadow-lg">
           <div className="flex justify-start items-center gap-2  bg-teal-300 p-2 rounded-full">
             <BsFillTelephoneInboundFill />
             <span className="font-bold">+900000000</span>
@@ -39,7 +39,7 @@ const Navbar = ({ children }) => {
             <FaLinkedinIn className="lg:mr-6 mr-2 text-teal-500 hover:text-neutral hover:cursor-pointer" />
           </div>
         </div>
-        <div className="shadow-lg navbar bg-white text-black ">
+        <div className="shadow-lg navbar bg-cyan-700 text-white ">
           <div className="flex-1 font-bold text-2xl">
             <img
               style={{ width: "70px" }}
@@ -67,14 +67,14 @@ const Navbar = ({ children }) => {
             </label>
           </div>
 
-          <div className="flex-none hidden lg:block  ">
+          <div className="flex-none hidden lg:block">
             <ul className="menu  menu-horizontal gap-x-2  ">{navItem}</ul>
           </div>
         </div>
 
         <div className="w-full">{children}</div>
       </div>
-      <div className="drawer-side z-10">
+      <div className="drawer-side z-10 ">
         <label for="my-drawer-3" className="drawer-overlay"></label>
         <ul className="menu p-2 overflow-y-auto w-80 bg-base-100">{navItem}</ul>
       </div>
