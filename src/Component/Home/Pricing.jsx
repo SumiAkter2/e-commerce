@@ -41,6 +41,10 @@ const Pricing = () => {
           ))}
         </div>
       </div>
+
+      <div className="flex justify-center items-center mt-6 ">
+        <button className="btn btn-primary">View All</button>
+      </div>
     </div>
   );
 };
