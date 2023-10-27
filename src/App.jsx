@@ -5,11 +5,11 @@ import Navbar from "./Component/Shared/Navbar";
 
 function App() {
   return (
-    <>
+    < div className="w-full">
       <Navbar />
       <Home />
       <Footer />
-    </>
+    </div >
   );
 }
 

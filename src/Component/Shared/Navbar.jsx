@@ -1,6 +1,7 @@
 import { FaLinkedinIn } from "react-icons/fa";
 import { ImFacebook } from "react-icons/im";
 import { BsTwitter } from "react-icons/bs";
+import { BsFillTelephoneInboundFill } from "react-icons/bs";
 import "./Navbar.css";
 import BrandLogo from "../../assets/banner/logo.png";
 import "./Navbar.css";
@@ -24,22 +25,21 @@ const Navbar = ({ children }) => {
   );
 
   return (
-    <div className="drawer drawer-end fixed top-0">
+    <div className="drawer drawer-end ">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
-        <div className="flex justify-between items-center bg-white text-black opacity-80 p-4 border-b-2">
-          <div className="flex justify-around w-1/2">
-            <p className=" lg:block hidden">Park Street USA</p>
-            <p className=" ">blackfit@gmail.com</p>
-            <p className=" lg:block hidden">Mon-Fri 08:00-18:00</p>
+        <div className="flex justify-between items-center bg-white text-black opacity-80 px-4 py-2 shadow-lg">
+          <div className="flex justify-start items-center gap-2  bg-teal-300 p-2 rounded-full">
+            <BsFillTelephoneInboundFill />
+            <span className="font-bold">+900000000</span>
           </div>
           <div className="flex lg:justify-around  items-center  text-primary">
-            <ImFacebook className="lg:mr-6 mr-2 hover:text-neutral" />
-            <BsTwitter className="lg:mr-6 mr-2  hover:text-neutral" />
-            <FaLinkedinIn className="lg:mr-6 mr-2 hover:text-neutral" />
+            <ImFacebook className="lg:mr-6 mr-2 text-teal-500 hover:text-neutral hover:cursor-pointer" />
+            <BsTwitter className="lg:mr-6 mr-2 text-teal-500 hover:text-neutral hover:cursor-pointer" />
+            <FaLinkedinIn className="lg:mr-6 mr-2 text-teal-500 hover:text-neutral hover:cursor-pointer" />
           </div>
         </div>
-        <div className="w-full navbar bg-white text-black ">
+        <div className="shadow-lg navbar bg-white text-black ">
           <div className="flex-1 font-bold text-2xl">
             <img
               style={{ width: "70px" }}
@@ -72,9 +72,9 @@ const Navbar = ({ children }) => {
           </div>
         </div>
 
-        {children}
+        <div className="w-full">{children}</div>
       </div>
-      <div className="drawer-side h-full  z-10">
+      <div className="drawer-side z-10">
         <label for="my-drawer-3" className="drawer-overlay"></label>
         <ul className="menu p-2 overflow-y-auto w-80 bg-base-100">{navItem}</ul>
       </div>
