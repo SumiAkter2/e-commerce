@@ -3,24 +3,32 @@ import BrandLogo from "../../assets/banner/logo.png";
 const Navbar = ({ children }) => {
   const navItem = (
     <>
-      <li className="rounded-lg  my-2 ">
-        <a href="/">Home</a>
+      <li className="rounded-lg my-2 ">
+        <a href="/" className="hover:text-cyan-200">
+          Home
+        </a>
       </li>
       <li className="rounded-lg  my-2">
-        <a href="#feature">Features</a>
+        <a href="#feature" className="hover:text-cyan-200">
+          Features
+        </a>
       </li>
       <li className="rounded-lg  my-2">
-        <a href="#pricing">Pricing</a>
+        <a href="#pricing" className="hover:text-cyan-200">
+          Pricing
+        </a>
       </li>
       <li className="rounded-lg  my-2">
-        <a href="#contact">Contact Us</a>
+        <a href="#contact" className="hover:text-cyan-200">
+          Contact Us
+        </a>
       </li>
     </>
   );
 
   return (
     <div>
-      <div className="drawer drawer-end">
+      <div className="drawer drawer-end fixed z-10">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
@@ -60,7 +68,7 @@ const Navbar = ({ children }) => {
               </label>
             </div>
             <div className="flex-none hidden lg:block">
-              <ul className="menu menu-horizontal font-bold">
+              <ul className="menu menu-horizontal font-bold ">
                 {/* Navbar menu content here */}
                 {navItem}
               </ul>

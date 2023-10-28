@@ -17,7 +17,7 @@ const Features = () => {
         </h1>
         <img src={headerImage} alt="img" />
       </div>
-      <div className="grid lg:grid-cols-3 grid-cols-1  gap-8 relative z-50 lg:max-w-3xl  lg:mx-10 mx-16 mt-12 mb-24">
+      <div className="grid lg:grid-cols-3 grid-cols-1  gap-8 relative z-50 lg:max-w-3xl  lg:mx-20 mx-16 mt-12 mb-24">
         <div className="flex flex-col justify-center items-center shadow-2xl   w-64 p-4 rounded-lg lg:absolute lg:top-[0px] lg:left-[100px]">
           <img src={img1} alt="logo" />
           <h1 className="font-bold text-primary mt-4">Dual Brand wifi</h1>

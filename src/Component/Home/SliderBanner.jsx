@@ -4,7 +4,7 @@ const SliderBanner = () => {
   return (
     <div className="hero bg-primary  min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={banner1} className="lg:max-w-2xl rounded-lg " />
+        <img src={banner1} className="lg:max-w-2xl rounded-lg mt-12" />
         <div className="lg:text-start lg:w-1/2 px-6 text-white mb-12">
           <h1 className="lg:text-5xl text-3xl  font-bold mb-3">
             Get benefits for every successfull referral.
