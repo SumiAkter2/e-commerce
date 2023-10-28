@@ -2,11 +2,11 @@ import banner1 from "../../assets/banner/banner2.png";
 
 const SliderBanner = () => {
   return (
-    <div className="hero bg-primary  ">
+    <div className="hero bg-primary  min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={banner1} className="max-w-2xl rounded-lg " />
-        <div className="text-start lg:w-1/2 px-6">
-          <h1 className="text-5xl font-bold text-white">
+        <img src={banner1} className="lg:max-w-2xl rounded-lg " />
+        <div className="text-start lg:w-1/2 px-6 text-white">
+          <h1 className="lg:text-4xl text-3xl  font-bold ">
             Get benefits for every successfull referral.
           </h1>
           <p className="py-6">

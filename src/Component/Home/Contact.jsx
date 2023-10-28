@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="hero ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="lg:w-1/2">
-            <img src={img} className="max-w-2xl rounded-lg " />
+            <img src={img} className="lg:max-w-2xl rounded-lg " />
           </div>
           <div className="lg:w-1/2">
             <h1 className="text-primary font-mono lg:text-4xl text-3xl font-bold lg:text-start mb-6">

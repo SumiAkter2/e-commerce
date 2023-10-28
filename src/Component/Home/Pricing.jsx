@@ -14,7 +14,7 @@ const Pricing = () => {
           {pricingInfo.map((info) => (
             <div key={info.id}>
               <div
-                className=" p-6 text-center grid justify-center items-center w-80 h-[500px] shadow-lg mx-12"
+                className=" p-6 text-center grid justify-center items-center lg:w-80 w-72 h-[500px] shadow-lg mx-auto"
                 style={{
                   background: `url(${bg})`,
                   backgroundRepeat: "no-repeat",

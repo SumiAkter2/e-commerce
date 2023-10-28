@@ -1,52 +1,45 @@
 import img1 from "../../assets/feature/wifi.png";
 import img2 from "../../assets/feature/time.png";
-import img3 from "../../assets/feature/rocket.png";
-import img4 from "../../assets/feature/plane.png";
+import img3 from "../../assets/feature/mike.png";
+import img4 from "../../assets/feature/web.png";
 import img5 from "../../assets/feature/live.png";
 import img6 from "../../assets/feature/blue.png";
 
 const Features = () => {
   return (
-    <div>
-      <h1 className="text-4xl text-center text-primary font-bold mt-12">
+    <div className="z-50 lg:h-screen h-full">
+      <h1 className="text-4xl text-center text-primary font-bold  mt-12">
         NETREXO FIBERNET ADVANTAGES
       </h1>
-      <div className="grid lg:grid-cols-3 gap-6 relative">
-        <div className="flex flex-col justify-center items-center">
+      <div className="grid lg:grid-cols-3 grid-cols-1  mt-12 gap-6 relative z-50 lg:max-w-3xl  lg:mx-10 mx-12 my-24">
+        <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4 rounded-lg lg:absolute lg:top-[0px] lg:left-[100px]">
           <img src={img1} alt="logo" />
-          <h1 className="font-bold text-primary mt-4">
-            Butter Smooth Streaming
-          </h1>
+          <h1 className="font-bold text-primary mt-4">Dual Brand wifi</h1>
         </div>
-        <div className="flex flex-col justify-center items-center  ">
+        <div className="flex flex-col justify-center items-center  shadow-2xl  w-64 p-4 lg:absolute lg:top-[50px] lg:left-[450px]">
           <img src={img2} alt="logo" />
-          <h1 className="font-bold text-primary mt-4">
-            Butter Smooth Streaming
-          </h1>
+          <h1 className="font-bold text-primary mt-4">1Gbs speed</h1>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4 lg:absolute lg:top-[120px] lg:left-[800px]">
           <img src={img3} alt="logo" />
-          <h1 className="font-bold text-primary mt-4">
-            Butter Smooth Streaming
-          </h1>
+          <h1 className="font-bold text-primary mt-4">24/7 support</h1>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4  lg:absolute lg:top-[200px] lg:left-[100px]">
           <img src={img4} alt="logo" />
           <h1 className="font-bold text-primary mt-4">
-            Butter Smooth Streaming
+            Equal Upload And Download Speed
           </h1>
         </div>
-        <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4 lg:absolute lg:top-[300px] lg:left-[450px] ">
           <img src={img5} alt="logo" />
           <h1 className="font-bold text-primary mt-4">
+            {" "}
             Butter Smooth Streaming
           </h1>
         </div>
-        <div className="flex flex-col justify-center items-center ">
+        <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4  lg:absolute lg:top-[350px] lg:left-[800px]">
           <img src={img6} alt="logo" />
-          <h1 className="font-bold text-primary mt-4">
-            Butter Smooth Streaming
-          </h1>
+          <h1 className="font-bold text-primary mt-4">Self Healing Network</h1>
         </div>
       </div>
     </div>
