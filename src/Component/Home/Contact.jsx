@@ -37,7 +37,7 @@ const Contact = () => {
                 <input
                   type="Submit"
                   defaultValue="Send Message"
-                  className="btn btn-primary w-full max-w-sm text-white"
+                  className="btn btn-primary w-full max-w-sm text-white mt-6"
                 />
               </div>
             </form>
