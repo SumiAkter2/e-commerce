@@ -17,33 +17,32 @@ const Features = () => {
         </h1>
         <img src={headerImage} alt="img" />
       </div>
-      <div className="grid lg:grid-cols-3 grid-cols-1  gap-6 relative z-50 lg:max-w-3xl  lg:mx-10 mx-16 mt-12 mb-24">
-        <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4 rounded-lg lg:absolute lg:top-[0px] lg:left-[100px]">
+      <div className="grid lg:grid-cols-3 grid-cols-1  gap-8 relative z-50 lg:max-w-3xl  lg:mx-10 mx-16 mt-12 mb-24">
+        <div className="flex flex-col justify-center items-center shadow-2xl   w-64 p-4 rounded-lg lg:absolute lg:top-[0px] lg:left-[100px]">
           <img src={img1} alt="logo" />
           <h1 className="font-bold text-primary mt-4">Dual Brand wifi</h1>
         </div>
-        <div className="flex flex-col justify-center items-center  shadow-2xl  w-64 p-4 lg:absolute lg:top-[50px] lg:left-[450px]">
+        <div className="flex flex-col justify-center items-center  shadow-2xl rounded-lg w-64 p-4 lg:absolute lg:top-[50px] lg:left-[450px]">
           <img src={img2} alt="logo" />
           <h1 className="font-bold text-primary mt-4">1Gbs speed</h1>
         </div>
-        <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4 lg:absolute lg:top-[120px] lg:left-[800px]">
+        <div className="flex flex-col justify-center items-center shadow-2xl rounded-lg w-64 p-4 lg:absolute lg:top-[120px] lg:left-[800px]">
           <img src={img3} alt="logo" />
           <h1 className="font-bold text-primary mt-4">24/7 support</h1>
         </div>
-        <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4  lg:absolute lg:top-[200px] lg:left-[100px]">
+        <div className="flex flex-col justify-center items-center shadow-2xl rounded-lg w-64 p-4  lg:absolute lg:top-[200px] lg:left-[100px]">
           <img src={img4} alt="logo" />
           <h1 className="font-bold text-primary mt-4">
             Equal Upload And Download Speed
           </h1>
         </div>
-        <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4 lg:absolute lg:top-[300px] lg:left-[450px] ">
+        <div className="flex flex-col justify-center items-center shadow-2xl rounded-lg w-64 p-4 lg:absolute lg:top-[300px] lg:left-[450px] ">
           <img src={img5} alt="logo" />
           <h1 className="font-bold text-primary mt-4">
-            {" "}
             Butter Smooth Streaming
           </h1>
         </div>
-        <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4  lg:absolute lg:top-[350px] lg:left-[800px]">
+        <div className="flex flex-col justify-center items-center shadow-2xl rounded-lg w-64 p-4  lg:absolute lg:top-[350px] lg:left-[800px]">
           <img src={img6} alt="logo" />
           <h1 className="font-bold text-primary mt-4">Self Healing Network</h1>
         </div>
