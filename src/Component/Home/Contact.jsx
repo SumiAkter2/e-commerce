@@ -2,7 +2,7 @@ import img from "../../assets/contact/contact.jpg";
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <div className="hero mt-24">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="lg:w-1/2">

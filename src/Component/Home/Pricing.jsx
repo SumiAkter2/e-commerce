@@ -11,8 +11,8 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 const Pricing = () => {
   return (
-    <div>
-      <div className="flex flex-col justify-center items-center">
+    <div id="pricing">
+      <div className="flex flex-col justify-center items-center px-4">
         <img src={line} alt="img" className="mt-12 mb-4" />
         <h1 className="lg:text-4xl text-2xl font-bold uppercase text-primary mb-6">
           Netrexo Broadband Tariff
@@ -23,7 +23,7 @@ const Pricing = () => {
           {pricingInfo.map((info) => (
             <div key={info.id}>
               <div
-                className=" p-6 text-center grid justify-center items-center lg:w-80 w-72 h-[500px] shadow-lg mx-auto  "
+                className=" p-6 text-center grid justify-center items-center lg:w-80 w-72 h-[500px] shadow-lg mx-auto rounded-lg "
                 style={{
                   background: `url(${bg})`,
                   backgroundRepeat: "no-repeat",
@@ -67,7 +67,7 @@ const Pricing = () => {
           clickable: true,
         }}
         modules={[Pagination, Autoplay, Navigation]}
-        className="mySwiper lg:hidden block"
+        className="mySwiper lg:hidden block "
         style={{
           "--swiper-pagination-color": "#0e7490",
           "--swiper-pagination-bullet-size": "16px",
@@ -79,7 +79,7 @@ const Pricing = () => {
         {pricingInfo.map((info) => (
           <SwiperSlide key={info.id}>
             <div
-              className=" p-6 text-center grid justify-center items-center  w-72 h-[500px] shadow-lg mx-auto my-12"
+              className=" p-6 text-center grid justify-center items-center  w-72 h-[500px] shadow-lg mx-auto my-12 rounded-lg "
               style={{
                 background: `url(${bg})`,
                 backgroundRepeat: "no-repeat",
@@ -106,7 +106,7 @@ const Pricing = () => {
 
       <div className="flex justify-center items-center mt-6 ">
         <button className="btn btn-primary">
-          View All <PiArrowRightBold size='20px'/>
+          View All <PiArrowRightBold size="20px" />
         </button>
       </div>
     </div>

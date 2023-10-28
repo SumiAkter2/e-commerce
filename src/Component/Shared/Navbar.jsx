@@ -4,16 +4,16 @@ const Navbar = ({ children }) => {
   const navItem = (
     <>
       <li className="rounded-lg  my-2 ">
-        <a>Home</a>
+        <a href="/">Home</a>
       </li>
       <li className="rounded-lg  my-2">
-        <a>Features</a>
+        <a href="#feature">Features</a>
       </li>
       <li className="rounded-lg  my-2">
-        <a>Pricing</a>
+        <a href="#pricing">Pricing</a>
       </li>
       <li className="rounded-lg  my-2">
-        <a>Contact Us</a>
+        <a href="#contact">Contact Us</a>
       </li>
     </>
   );

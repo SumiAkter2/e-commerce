@@ -9,8 +9,8 @@ import headerImage from "../../assets/feature/header.png";
 
 const Features = () => {
   return (
-    <div className="z-50 lg:h-screen h-full">
-      <div className="flex flex-col justify-center items-center mt-12">
+    <div className="z-50 lg:h-screen h-full" id="feature">
+      <div className="flex flex-col justify-center items-center mt-12 px-4">
         <img src={line} alt="img" className="mt-12 mb-4" />
         <h1 className="lg:text-4xl text-2xl font-bold uppercase text-primary mb-6">
           NETREXO FIBERNET ADVANTAGES
