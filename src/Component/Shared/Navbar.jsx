@@ -1,10 +1,4 @@
-import { FaLinkedinIn } from "react-icons/fa";
-import { ImFacebook } from "react-icons/im";
-import { BsTwitter } from "react-icons/bs";
-import { BsFillTelephoneInboundFill } from "react-icons/bs";
-import "./Navbar.css";
 import BrandLogo from "../../assets/banner/logo.png";
-import "./Navbar.css";
 
 const Navbar = ({ children }) => {
   const navItem = (
@@ -25,47 +19,67 @@ const Navbar = ({ children }) => {
   );
 
   return (
-    <div className="drawer drawer-end ">
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col ">
-        <div className="shadow-lg navbar bg-cyan-700 text-white ">
-          <div className="flex-1 font-bold text-2xl">
-            <img
-              style={{ width: "70px" }}
-              src={BrandLogo}
-              alt="brand-logo"
-              className="lg:mr-4 mr-2"
-            />
-            <a href="/"> E-Commerce</a>
-          </div>
-          <div className="flex-none lg:hidden ">
-            <label for="my-drawer-3" className="btn btn-square btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block w-6 h-6 stroke-current"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              </svg>
-            </label>
-          </div>
+    <div>
+      <div className="drawer drawer-end">
+        <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content flex flex-col">
+          {/* Navbar */}
+          <div className="w-full navbar px-6 bg-cyan-700 text-white shadow-lg">
+            <div className="flex-1  mx-2">
+              <img
+                style={{ width: "70px" }}
+                src={BrandLogo}
+                alt="brand-logo"
+                className="lg:mr-4 mr-2"
+              />
+              <a href="/" className="font-bold text-xl">
+                {" "}
+                E-Commerce
+              </a>
+            </div>
 
-          <div className="flex-none hidden lg:block">
-            <ul className="menu  menu-horizontal gap-x-2  ">{navItem}</ul>
+            <div className="flex-none lg:hidden">
+              <label
+                htmlFor="my-drawer-3"
+                aria-label="open sidebar"
+                className="btn btn-square btn-ghost"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  className="inline-block w-6 h-6 stroke-current"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </label>
+            </div>
+            <div className="flex-none hidden lg:block">
+              <ul className="menu menu-horizontal font-bold">
+                {/* Navbar menu content here */}
+                {navItem}
+              </ul>
+            </div>
           </div>
+          {/* Page content here */}
+          {children}
         </div>
 
-        <div className="w-full">{children}</div>
-      </div>
-      <div className="drawer-side z-10 ">
-        <label for="my-drawer-3" className="drawer-overlay"></label>
-        <ul className="menu p-2 overflow-y-auto w-80 bg-base-100">{navItem}</ul>
+        <div className="drawer-side z-40">
+          <label
+            htmlFor="my-drawer-3"
+            aria-label="close sidebar"
+            className="drawer-overlay"
+          ></label>
+          <ul className="menu p-4 w-80 min-h-full bg-slate-200 text-cyan-700 font-bold">
+            {navItem}
+          </ul>
+        </div>
       </div>
     </div>
   );

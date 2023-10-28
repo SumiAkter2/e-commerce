@@ -4,14 +4,20 @@ import img3 from "../../assets/feature/mike.png";
 import img4 from "../../assets/feature/web.png";
 import img5 from "../../assets/feature/live.png";
 import img6 from "../../assets/feature/blue.png";
+import line from "../../assets/feature/line.png";
+import headerImage from "../../assets/feature/header.png";
 
 const Features = () => {
   return (
     <div className="z-50 lg:h-screen h-full">
-      <h1 className="text-4xl text-center text-primary font-bold  mt-12">
-        NETREXO FIBERNET ADVANTAGES
-      </h1>
-      <div className="grid lg:grid-cols-3 grid-cols-1  mt-12 gap-6 relative z-50 lg:max-w-3xl  lg:mx-10 mx-12 my-24">
+      <div className="flex flex-col justify-center items-center mt-12">
+        <img src={line} alt="img" className="mt-12 mb-4" />
+        <h1 className="lg:text-4xl text-2xl font-bold uppercase text-primary mb-6">
+          NETREXO FIBERNET ADVANTAGES
+        </h1>
+        <img src={headerImage} alt="img" />
+      </div>
+      <div className="grid lg:grid-cols-3 grid-cols-1  gap-6 relative z-50 lg:max-w-3xl  lg:mx-10 mx-12 mt-12 mb-24">
         <div className="flex flex-col justify-center items-center shadow-2xl  w-64 p-4 rounded-lg lg:absolute lg:top-[0px] lg:left-[100px]">
           <img src={img1} alt="logo" />
           <h1 className="font-bold text-primary mt-4">Dual Brand wifi</h1>

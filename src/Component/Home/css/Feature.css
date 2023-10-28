@@ -1,7 +1,45 @@
-.pricing-card{
-  
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-overflow: hidden;
+
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    padding-top: 100px;
+    background: #0e7490c0;
 }
+
+.curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: white;
+    overflow: hidden;
+}
+
+.curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #0e7490c0;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+    overflow: hidden;
+}
+

@@ -1,8 +1,9 @@
-import bg from "../../assets/feature/bg.png";
+import bg from "../../assets/feature/bg1.png";
+import line from "../../assets/feature/line.png";
+import headerImage from "../../assets/feature/header.png";
 import { pricingInfo } from "../info/Info";
-import "./css/Feature.css";
+import { PiArrowRightBold } from "react-icons/pi";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -11,17 +12,18 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 const Pricing = () => {
   return (
     <div>
-      <div className="  text-center p-6">
-        {/* <div className="divider divider-cyan-700 "></div> */}
-        <h1 className="lg:text-4xl text-2xl py-12 font-bold uppercase text-primary">
+      <div className="flex flex-col justify-center items-center">
+        <img src={line} alt="img" className="mt-12 mb-4" />
+        <h1 className="lg:text-4xl text-2xl font-bold uppercase text-primary mb-6">
           Netrexo Broadband Tariff
         </h1>
+        <img src={headerImage} alt="img" className="mb-12" />
 
         <div className="lg:grid lg:grid-cols-3 gap-6 hidden">
           {pricingInfo.map((info) => (
             <div key={info.id}>
               <div
-                className=" p-6 text-center grid justify-center items-center lg:w-80 w-72 h-[500px] shadow-lg mx-auto"
+                className=" p-6 text-center grid justify-center items-center lg:w-80 w-72 h-[500px] shadow-lg mx-auto  "
                 style={{
                   background: `url(${bg})`,
                   backgroundRepeat: "no-repeat",
@@ -101,8 +103,11 @@ const Pricing = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
       <div className="flex justify-center items-center mt-6 ">
-        <button className="btn btn-primary">View All</button>
+        <button className="btn btn-primary">
+          View All <PiArrowRightBold size='20px'/>
+        </button>
       </div>
     </div>
   );
